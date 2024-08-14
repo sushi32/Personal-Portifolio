@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sushanth's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/static/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+
+<body id="top">
+  <header>
+    <div class="profile-page sidebar-collapse">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
+              class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
+              class="navbar-toggler-bar bar3"></span></button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+{#            <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Projects</a></li>#}
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <div class="profile-page">
+      <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="green">
+          <div class="page-header-image" data-parallax="true" style="background-image: url('static/images/profileBackground.jpg')"></div>
+          <div class="container">
+            <div class="content-center">
+              <div class="cc-profile-image"><a href="#"><img src="static/images/profilePic.jpeg" alt="Image" /></a></div>
+              <div class="h2 title">Sushanth Grandhi</div>
+              <p class="category text-white">Software Devloper</p>
+              <a class="btn btn-primary" target="_blank" href="{{ url_for('static',filename='SushanthGrandhi_Resume.pdf') }}"
+                data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+              <a class="btn btn-primary" target="_blank" href = "mailto:sushanthgrandhi@gmail.com"
+                data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Send Email</a>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container">
+              <div class="button-container">
+                <a class="cc-google-plus btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://github.com/sushi32"
+                  rel="tooltip" title="Checkout my Projects on Github!"><i class="fa fa-github"></i></a>
+                <a class="cc-instagram btn btn-default btn-round btn-lg btn-icon" target="_blank"
+                  href="https://www.linkedin.com/in/sushanth-grandhi/" rel="tooltip"
+                  title="Connect with me on LinkedIn :)"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="about">
+      <div class="container">
+        <div class="card" data-aos="fade-up" data-aos-offset="10">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">About Me</div>
+                <p style="text-align:justify;"> I'm a Mobile app Developer with extensive experience in creating dynamic and user-friendly applications.
+                    My journey in tech has been driven by a passion for machine learning,
+                    always aiming to leverage cutting-edge technology to enhance user interactions and functionalities.
+                    Beyond the world of coding, I'm an avid tech gadget enthusiast who loves exploring the great outdoors.
+                    Hiking and connecting with nature provide me with the inspiration and energy to innovate and think creatively in my professional projects.
+                    Whether I'm scaling mountains or debugging code, I'm always on the move, learning and pushing the limits of what's possible.
+                    Join me as I navigate the exciting intersection of technology, nature, and innovation.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">Basic Information</div>
+{#                <div class="row">#}
+{#                  <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>#}
+{#                  <div class="col-sm-8">25</div>#}
+{#                </div>#}
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                  <div class="col-sm-8">sushanthgrandhi@gmail.com</div>
+                </div>
+{#                <div class="row mt-3">#}
+{#                  <div class="col-sm-4"></div>#}
+{#                  <div class="col-sm-8">grandhi@buffalo.edu</div>#}
+{#                </div>#}
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                  <div class="col-sm-8">+1 716-335-2930</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                  <div class="col-sm-8">Buffalo, New York, USA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="skill">
+      <div class="container">
+        <div class="h4 text-center mb-4 title">Professional Skills</div>
+        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="card-body">
+            <b>Programming Languages:</b> Python, Kotlin, Java, Swift, C/C++, C#, JavaScript, React, HTML5,
+              CSS, XML, R, AJAX, JSON, SQL<br><br>
+            <b>Technologies / Libraries:</b> Android SDK, iOS SDK, Gradle, Jetpack Compose,
+              REST APIs, Ktor, Retrofit, Flask, Pandas, SwiftUI, UIKit, Firebase,
+              JUnit, Espresso, Kotlin Flows, KMM, RxJava/RxKotlin, Material Design, Apache Solr <br><br>
+            <b>Cloud / Databases:</b> MySQL, MongoDB, Firebase Realtime Database, Firestore, Neo4J, SqlDelight, Realm,
+              Room, GCP, Docker, Hadoop, Spark<br><br>
+            <b>Tools / Competencies:</b> Version Control - Git, JIRA, UNIX, Ubuntu, Continuous Integration/Continuous Deployment (CI/CD),
+              Debugging and  Troubleshooting, Collaboration, Reactive Programming, Multi-modular architecture.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="experience">
+      <div class="container cc-experience">
+        <div class="h4 text-center mb-4 title">Indsutry Experience</div>
+
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>July 2023 - January 2024</p>
+                <div class="h5">The Research Foundation for SUNY</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Senior Research Assistant - Application Development</div>
+                  <ul style="text-align:justify;">
+                    <li>Collaborated with Dr. Eunhee Park and a multidisciplinary research team from University at Buffalo, School of Nursuing
+                      to develop innovative cross-platform Android and iOS apps for e-cigarette cessation intervention and enhancing mental health care of patients.</li>
+                    <li>Designed and implemented configurable themes to create an intuitive and user-friendly experience,
+                      allowing users to choose themes, catering to their emotional needs and inducing a sense of calmness.</li>
+                    <li>Integrated 2-factor authentication, developed an automated chatbot functionality, and created an innovative
+                        progress tracker for analytics with graphical visuals.</li>
+                    <li>Led the development of post-wall, daily check-in and goal-setting features empowering patients to stay motivated.
+                      Transformed the app into a proactive tool for patient mental health well-being.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>June 2023 - August 2023</p>
+                <div class="h5">Diya Research Inc.</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Research Assistant Intern</div>
+                  <ul style="text-align:justify;">
+                    <li>
+                        Provided mentorship to high-school students in a programming bootcamp, focusing on data structures and foundational coding, data science principles,
+                        enhancing problem-solving skills while fostering a collaborative learning environment.
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>January 2020 - June 2022</p>
+                <div class="h5">Samsung Research Institute, Noida</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Software Engineer</div>
+                  <ul style="text-align:justify;">
+                    <li>Refactored the codebase of Samsung's native applications from Java to Kotlin,
+                        adopting Jetpack, Room, LiveData, Navigation, DataBinding improving app performance
+                        and reduced bug incidence by 25%.</li>
+                    <li>Patented a novel technique using SmartThings IoT to automate Bluetooth connectivity in smartphones,
+                        which has potential to enhance battery efficiency and connection stability.</li>
+                    <li>Optimized Bixby voice command flow APIs across applications for fast processing, reducing response latency by 30%.</li>
+                    <li>Managed ownership, development and maintanence of Samsung WearOS clock applications utilizing MVVM architecture</li>
+                    <li>Built 2 new features related to samsung health by managing asynchronous data with reactive programming - Flows, Coroutines.</li>
+                    <li>Conducted rigorous code reviews and provided feedback, contributing to a team-wide increase in
+                        code quality and enhanced unit test, integration test coverage across projects using JUnit.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section" id="education">
+      <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Education</div>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-education-header">
+                <p>August 2022 - February 2024</p>
+                <div class="h5">Master's Degree</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">M.S. in Computer Science and Engineering</div>
+                <p class="category">STATE UNIVERSITY OF NEW YORK AT BUFFALO, NEW YORK</p>
+                <p><strong>Coursework:</strong>
+                  <ol>
+                    <li>Information Retrieval</li>
+                    <li>Blockchain Application Development</li>
+                    <li>Analysis of Algorithms</li>
+                    <li>Data Intensive Computing</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Bayesian Networks</li>
+                    <li>Computer Vision and Image Processing</li>
+                  </ol>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-education-header">
+                <p>June 2016 - May 2020</p>
+                <div class="h5">Bachelor's Degree</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">B.Tech. in Information technology</div>
+                <p class="category">National Institute of Technology, Patna</p>
+                  <p><strong>Relevant Coursework:</strong>
+                  <ol>
+                    <li>Programming Basics</li>
+                    <li>Object Oriented Programming</li>
+                    <li>Computer Networks</li>
+                    <li>Operating Systems</li>
+                    <li>Data Mining</li>
+                    <li>Algorithm Design Principles</li>
+                    <li>Database Management Systems</li>
+                  </ol>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{#      <div class="section" id="projects">#}
+{#      <div class="container cc-education">#}
+{#        <div class="h4 text-center mb-4 title">Projects</div>#}
+{#          <div class="card">#}
+{#              <div class="row">#}
+{#                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">#}
+{#                  <div class="card-body cc-education-header">#}
+{#                    <p class="h6">Project Name1</p>#}
+{#                    <a class="btn btn-neutral" target="_blank"#}
+{#                    href="{{url_for('static',filename='')}}" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">View</a>#}
+{#                  </div>#}
+{#                </div>#}
+{##}
+{#                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">#}
+{#                  <div class="card-body">#}
+{#                    <p> Main Description. </p>#}
+{#                    <ul style="text-align:justify;">#}
+{#                      <li>Point1</li>#}
+{#                      <li>point2</li>#}
+{#                    </ul>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#          </div>#}
+{#      </div>#}
+{#    </div>#}
+
+    <footer class="footer">
+      <div class="container text-center">
+        <a class="cc-google-plus btn btn-link" target="_blank" href="https://github.com/sushi32"><i
+            class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a class="cc-instagram btn btn-link" target="_blank"
+          href="https://www.linkedin.com/in/sushanth-grandhi/"><i class="fa fa-linkedin fa-2x "
+            aria-hidden="true"></i></a>
+        <a class="cc-twitter btn btn-link " target="_blank" href=""><i
+            class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
+      </div>
+      <div class="h4 title text-center">Sushanth Grandhi</div>
+    </footer>
+
+    <script src="{{ url_for('static',filename='js/core/jquery.3.2.1.min.js') }}"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script src="{{ url_for('static',filename='js/core/popper.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/core/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/now-ui-kit.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/aos.js') }}"></script>
+    <script src="{{ url_for('static',filename='scripts/main.js') }}"></script>
+
+</body>
+</html>
